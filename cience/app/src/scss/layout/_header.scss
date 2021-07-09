@@ -1,1 +1,53 @@
-.header {}
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    background: url(../assets/img/header/bg.jpg) center;
+    &__wrapper {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    &__logo {
+        padding-top: 20px;
+        display: flex;
+    }
+    &__title {
+        margin-top: 25px;
+        @include font(Open Sans, normal, 300, 32px, 40px, #FFFFFF);
+    }
+    &__text {
+        margin-top: 20px;
+        @include font(Open Sans, normal, 300, 16px, 24px, #FFFFFF);
+    }
+    &__link {
+        margin-top: 25px;
+        width: 160px;
+        height: 40px;
+        background: #FDB913;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font(Open Sans, normal, 700, 12px, 14px, #FFFFFF);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    &__img {
+        width: 176px;
+        height: 270px;
+        margin: 22px auto 0;
+        padding-right: 10px;
+    }
+}
+
+.logo {
+    &__img {
+        width: 50px;
+        height: 64px;
+    }
+}
