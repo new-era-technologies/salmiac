@@ -1,0 +1,28 @@
+.terminal {
+    width: 100%;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    &__wrapper {
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        margin-top: 40px;
+        @include font(Open Sans, normal, 300, 25px, 35px, #2d2d2d);
+    }
+    &__text {
+        margin-top: 20px;
+        @include font(Open Sans, normal, 300, 14px, 22px, #2d2d2d);
+    }
+    &__img {
+        width: 240px;
+        height: 167px;
+        margin: 18px auto 40px;
+        filter: drop-shadow(0px 4px 34px rgba(0, 0, 0, 0.15));
+    }
+}
