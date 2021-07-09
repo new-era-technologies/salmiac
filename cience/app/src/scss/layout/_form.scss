@@ -1,0 +1,93 @@
+.form {
+    width: 100%;
+    box-sizing: border-box;
+    background: #446A82;
+    &__wrapper {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    &__inner>div {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        width: 212px;
+        margin: 0 auto;
+        padding-top: 40px;
+        @include font(Open Sans, normal, 300, 25px, 35px, #FFFFFF);
+        text-align: center;
+    }
+    &__label {
+        margin: 54px 0 10px 7px;
+        display: flex;
+        @include font(Open Sans, normal, 300, 16px, 16px, #FFFFFF);
+        text-transform: uppercase;
+        cursor: pointer;
+        &--aggreement {
+            margin: 0 0 0 20px;
+            display: inline-flex;
+            @include font(Open Sans, normal, 300, 20px, 20px, #FFFFFF);
+            text-transform: initial;
+            cursor: initial;
+        }
+    }
+    &__label:first-child {
+        margin-top: 35px;
+    }
+    &__input {
+        width: 290px;
+        height: 57px;
+        padding: 0 17px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font(Open Sans, normal, 300, 16px, 20px, #446A82);
+        &--text {
+            height: 114px;
+            padding-top: 21px;
+            resize: vertical;
+        }
+        &--aggreement {
+            display: none;
+        }
+        &--aggreement+label {
+            width: 32px;
+            height: 32px;
+            background: url(../assets/img/icons/unchecked.svg);
+            display: inline-flex;
+        }
+        &--aggreement:checked+label {
+            width: 32px;
+            height: 32px;
+            background: url(../assets/img/icons/checked.svg);
+            display: inline-flex;
+        }
+        &--submit {
+            width: 160px;
+            height: 40px;
+            margin: 25px auto 0;
+            background: #FDB913;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include font(Open Sans, normal, 700, 14px, 14px, #FFFFFF);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
