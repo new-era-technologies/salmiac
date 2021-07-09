@@ -1,0 +1,40 @@
+.services {
+    width: 100%;
+    box-sizing: border-box;
+    &__wrapper {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__inner {
+        display: flex;
+    }
+    &__title {
+        padding: 40px 0;
+        @include font(Open Sans, normal, 300, 25px, 30px, #2d2d2d);
+        text-align: center;
+    }
+}
+
+.list {
+    margin-top: 40px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service {
+    margin-bottom: 40px;
+    &__img {
+        width: 50px;
+        height: 50px;
+    }
+    &__title {
+        margin-top: 20px;
+        @include font(Open Sans, normal, 300, 20px, 30px, #2d2d2d);
+    }
+    &__description {
+        margin-top: 20px;
+        @include font(Open Sans, normal, 300, 14px, 20px, #2d2d2d);
+    }
+}
