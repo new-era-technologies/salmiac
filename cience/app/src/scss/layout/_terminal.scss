@@ -54,3 +54,14 @@
         }
     }
 }
+
+@media screen and (min-width: 1600px) {
+    .terminal {
+        &__wrapper {
+            padding: 75px 245px 65px;
+        }
+        &__inner:first-child {
+            width: 540px;
+        }
+    }
+}
