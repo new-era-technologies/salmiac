@@ -12,11 +12,7 @@ window.onload = function() {
             translateX: [
                 ["elInY", "elCenterY", "elOutY"],
                 ['elWidth', 0, 'elWidth']
-            ],
-            // opacity: [
-            //     [0, 100],
-            //     [1, 0]
-            // ]
+            ]
         }
     })
 
