@@ -56,7 +56,6 @@
     box-sizing: border-box;
     &__quote {
         @include font(Open Sans, italic, 300, 14px, 25px, #2d2d2d);
-        color: #2D2D2D;
     }
     &__pers {
         margin-top: 25px;
@@ -69,4 +68,49 @@
 
 .swiper-container {
     width: 270px;
+}
+
+@media screen and (min-width: 1200px) {
+    .clients {
+        &__wrapper {
+            padding: 0 105px;
+        }
+        &__inner {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        &__title {
+            padding-top: 65px;
+            @include font(Open Sans, normal, 300, 35px, 35px, #2d2d2d);
+            text-align: center;
+        }
+    }
+    .logos {
+        width: 100%;
+        margin: 65px 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        &__item {
+            margin: 0;
+        }
+    }
+    .slider {
+        margin-top: 60px;
+        padding: 0 30px;
+        &__arrow {
+            width: 42px;
+            height: 42px;
+            top: calc(50% - 21px);
+        }
+    }
+    .client {
+        &__quote {
+            @include font(Open Sans, italic, 300, 18px, 30px, #2d2d2d);
+        }
+    }
+    .swiper-container {
+        width: 920px;
+    }
 }

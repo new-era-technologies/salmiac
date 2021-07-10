@@ -1,1 +1,1 @@
-"use strict";var swiper=new Swiper(".swiper-container",{loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});(new WOW).init();
+"use strict";var swiper=new Swiper(".swiper-container",{loop:!0,slidesPerView:window.matchMedia("(min-width: 1200px)").matches?3:1,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});(new WOW).init();
