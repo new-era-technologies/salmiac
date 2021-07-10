@@ -28,6 +28,8 @@
         width: 160px;
         height: 40px;
         background: #FDB913;
+        border: none;
+        outline: none;
         border-radius: 50px;
         display: flex;
         justify-content: center;
@@ -35,7 +37,7 @@
         @include font(Open Sans, normal, 700, 12px, 14px, #FFFFFF);
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        text-decoration: none;
+        cursor: pointer;
     }
     &__img {
         width: 176px;
