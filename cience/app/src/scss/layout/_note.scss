@@ -30,3 +30,29 @@
         @include font(Open Sans, normal, 300, 14px, 20px, #FFFFFF);
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .note {
+        &__wrapper {
+            flex-direction: row;
+        }
+        &__inner:nth-child(2) {
+            padding: 50px 110px;
+        }
+        &__img {
+            width: 662px;
+            height: 512px;
+            margin: 0;
+        }
+        &__title {
+            width: auto;
+            margin: 0 auto;
+            @include font(Open Sans, normal, 300, 35px, 45px, #FFFFFF);
+        }
+        &__text {
+            width: auto;
+            margin: 25px auto 0;
+            @include font(Open Sans, normal, 300, 16px, 25px, #FFFFFF);
+        }
+    }
+}
