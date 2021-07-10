@@ -1,1 +1,1 @@
-"use strict";var swiper=new Swiper(".swiper-container",{loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
+"use strict";var swiper=new Swiper(".swiper-container",{loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});(new WOW).init();
