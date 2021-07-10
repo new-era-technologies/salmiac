@@ -83,3 +83,14 @@
         }
     }
 }
+
+@media screen and (min-width: 1600px) {
+    .services {
+        &__wrapper {
+            padding: 0 245px;
+        }
+        &__description {
+            width: 350px;
+        }
+    }
+}
