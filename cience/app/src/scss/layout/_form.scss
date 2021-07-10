@@ -24,7 +24,7 @@
         text-align: center;
     }
     &__label {
-        margin: 54px 0 10px 7px;
+        margin: 54px auto 10px 7px;
         display: flex;
         @include font(Open Sans, normal, 300, 16px, 16px, #FFFFFF);
         text-transform: uppercase;
@@ -84,10 +84,68 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            @include font(Open Sans, normal, 700, 14px, 14px, #FFFFFF);
+            font-size: 14px !important;
+            line-height: 14px !important;
+            color: #FFFFFF !important;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             cursor: pointer;
         }
+    }
+}
+
+form {
+    width: 290px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1200px) {
+    .form {
+        &__wrapper {
+            padding: 0;
+            justify-content: center;
+        }
+        &__inner {
+            width: 540px;
+            margin-top: 30px;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        &__inner>div {
+            margin-top: 0;
+        }
+        &__title {
+            width: 730px;
+            margin: 0 auto;
+            padding-top: 60px;
+            @include font(Open Sans, normal, 300, 35px, 45px, #FFFFFF);
+        }
+        &__label {
+            margin: 40px auto 20px 10px;
+            @include font(Open Sans, normal, 300, 20px, 20px, #FFFFFF);
+            &--aggreement {
+                margin: 0 auto 0 20px;
+            }
+        }
+        &__label:first-child {
+            margin-top: 50px;
+        }
+        &__input {
+            width: 540px;
+            @include font(Open Sans, normal, 300, 20px, 20px, #446A82);
+            &--submit {
+                width: 121px;
+                height: 50px;
+                margin: 0;
+            }
+        }
+    }
+    form {
+        width: 540px;
     }
 }
