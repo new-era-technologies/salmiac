@@ -26,3 +26,31 @@
         filter: drop-shadow(0px 4px 34px rgba(0, 0, 0, 0.15));
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .terminal {
+        &__wrapper {
+            padding: 75px 105px 65px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__inner:first-child {
+            width: 540px;
+        }
+        &__title {
+            margin-top: 0;
+            @include font(Open Sans, normal, 300, 35px, 45px, #2d2d2d);
+        }
+        &__text {
+            margin-top: 30px;
+            @include font(Open Sans, normal, 300, 16px, 25px, #2d2d2d);
+        }
+        &__img {
+            width: 475px;
+            height: 330px;
+            margin: 0;
+        }
+    }
+}
